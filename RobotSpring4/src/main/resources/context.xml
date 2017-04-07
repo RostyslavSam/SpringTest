@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+       <bean id="t1000" class="com.rostik.spring.robot.ModelT1000"
+             p:head-ref = "toshibaHead"
+             p:hand-ref = "toshibaHand"
+             p:leg-ref = "sonyLeg">
+
+
+              <!--<constructor-arg value="silver"/>-->
+              <!--<constructor-arg value="2006"/>-->
+              <!--<constructor-arg value="true"/>-->
+
+              <!--<constructor-arg value="silver" index="0"/>-->
+              <!--<constructor-arg value="true" index="2"/>-->
+              <!--<constructor-arg value="2006" index="1"/>-->
+
+              <constructor-arg value="silver" index="0" type="String"/>
+              <constructor-arg value="true" index="2" type="boolean"/>
+              <constructor-arg value="2006" index="1" type="int"/>
+
+              <!--<property name="head" ref="toshibaHead"/>-->
+              <!--<property name="hand" ref="toshibaHand"/>-->
+              <!--<property name="leg" ref="toshibaLeg"/>-->
+
+       </bean>
+
+
+       <bean id="sonyHead" class="com.rostik.spring.sony.SonyHead"/>
+       <bean id="sonyHand" class="com.rostik.spring.sony.SonyHand"/>
+       <bean id="sonyLeg" class="com.rostik.spring.sony.SonyLeg"/>
+
+       <bean id="toshibaHead" class="com.rostik.spring.toshiba.ToshibaHead"/>
+       <bean id="toshibaHand" class="com.rostik.spring.toshiba.ToshibaHand"/>
+       <bean id="toshibaLeg" class="com.rostik.spring.toshiba.ToshibaLeg"/>
+</beans>

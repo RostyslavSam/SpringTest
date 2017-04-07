@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+       <bean id="t1000" class="com.rostik.spring.robot.ModelT1000">
+              <!--<constructor-arg ref="sonyHead"/>-->
+              <!--<constructor-arg ref="sonyHand"/>-->
+              <!--<constructor-arg ref="sonyLeg"/>-->
+
+              <property name="head" ref="toshibaHead"/>
+              <property name="hand" ref="toshibaHand"/>
+              <property name="leg" ref="toshibaLeg"/>
+       </bean>
+
+
+       <bean id="sonyHead" class="com.rostik.spring.sony.SonyHead"/>
+       <bean id="sonyHand" class="com.rostik.spring.sony.SonyHand"/>
+       <bean id="sonyLeg" class="com.rostik.spring.sony.SonyLeg"/>
+
+       <bean id="toshibaHead" class="com.rostik.spring.toshiba.ToshibaHead"/>
+       <bean id="toshibaHand" class="com.rostik.spring.toshiba.ToshibaHand"/>
+       <bean id="toshibaLeg" class="com.rostik.spring.toshiba.ToshibaLeg"/>
+</beans>

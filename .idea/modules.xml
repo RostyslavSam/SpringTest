@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RobotSpring/RobotSpring.iml" filepath="$PROJECT_DIR$/RobotSpring/RobotSpring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RobotSpring2/RobotSpring2.iml" filepath="$PROJECT_DIR$/RobotSpring2/RobotSpring2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RobotSpring3/RobotSpring3.iml" filepath="$PROJECT_DIR$/RobotSpring3/RobotSpring3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RobotSpring4/RobotSpring4.iml" filepath="$PROJECT_DIR$/RobotSpring4/RobotSpring4.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringTest.iml" filepath="$PROJECT_DIR$/SpringTest.iml" />
     </modules>
   </component>
